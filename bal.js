@@ -7,8 +7,8 @@ class Bal {
     constructor(_x, _y) {
         this.x = _x;
         this.y = _y;
-        speedX = 3;
-        speedY = -4; 
+        speedX = _speedX;
+        speedY = -speedY; 
     }
     
     update() {
