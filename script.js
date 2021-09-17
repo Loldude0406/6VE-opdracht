@@ -1,5 +1,5 @@
+// globale variabelen
 var ballen = [];
-var superballen = [];
 
 /**
  * setup
@@ -21,19 +21,7 @@ function setup() {
     ballen.push(bal);
   }
 
-    for (var i = 0; i < 1; i++) {
-    var randomx = random(50, 1230);
-    var randomy = random(50, 670);
-    var randomSpeedX = random (-5, 5);
-    var randomSpeedY = random (-5, 5);
-    var randomKleurR = random(0,255);
-    var randomKleurG = random(0,255);
-    var randomKleurB = random(0,255);
 
-    var superbal = new Superbal(randomx, randomy, randomSpeedX, randomSpeedY, randomKleurR, randomKleurG, randomKleurB);
-
-    superballen.push(bal);
-  }
 }
 
 
@@ -49,10 +37,5 @@ function draw() {
   for(var i = 0; i < ballen.length; i++) {
     ballen[i].show();
     ballen[i].update();
-  }
-
-  for(var i = 0;i < superballen.length;i++) {
-    superballen[i].show();
-    superballen[i].update();
   }
 }
